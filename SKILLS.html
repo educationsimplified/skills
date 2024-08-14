@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Team & Skill Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .section a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function getRandomQuote() {
+            const quotes = [
+                "Believe in yourself and all that you are.",
+                "The only limit to our realization of tomorrow is our doubts of today.",
+                "Act as if what you do makes a difference. It does.",
+                "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+                "You are never too old to set another goal or to dream a new dream."
+            ];
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        function updateFooter() {
+            document.getElementById('footer-quote').innerText = getRandomQuote();
+        }
+    </script>
+</head>
+<body onload="updateFooter()">
+    <header>
+        <h1>Join Our Team & Skill Courses</h1>
+    </header>
+
+    <div class="section">
+        <h2>Join Our WhatsApp Group</h2>
+        <p>Become a part of our team by joining our WhatsApp group:</p>
+        <a href="https://chat.whatsapp.com/ISC7TxqPxoFAGd4QsztkOP" target="_blank">
+            Join WhatsApp Group
+        </a>
+    </div>
+
+    <div class="section">
+        <h2>Apply for Skill Courses</h2>
+        <p>We are currently tied up with SEG Academy, one of the best institutes in Varanasi. They are number one in Purvanchal for stock market education. If you want to join, visit their website:</p>
+        <a href="https://segacademy.com" target="_blank">
+            <img src="https://segacademy.com/images/mainimg.jpg" alt="SEG Academy">
+        </a>
+        <p>For more information, check their <a href="https://segacademy.com" target="_blank">website</a>.</p>
+        <a href="https://segacademy.com" target="_blank">
+            <img src="https://content.jdmagicbox.com/comp/varanasi/f4/0542px542.x542.201209233507.v1f4/catalogue/segacademy-pvt-ltd-sigra-varanasi-share-trading-institutes-t3ervpzu1k.jpg" alt="SEG Academy Varanasi">
+        </a>
+        <p>Say <strong>“Uzair Bhaiye ne recommend kiya hai”</strong> when you visit.</p>
+        <p>If you have financial problems and need a free way to develop the skill and personal guidence, you can also join our WhatsApp group:</p>
+        <a href="https://chat.whatsapp.com/ISC7TxqPxoFAGd4QsztkOP" target="_blank">
+            Join WhatsApp Group
+        </a>
+    </div>
+
+    <footer class="footer">
+        <p id="footer-quote"></p>
+        <p>Thank you, and excel in your future!</p>
+    </footer>
+</body>
+</html>
